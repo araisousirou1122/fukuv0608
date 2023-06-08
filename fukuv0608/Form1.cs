@@ -1,3 +1,5 @@
+using System.Diagnostics.Eventing.Reader;
+
 namespace fukuv0608
 {
     public partial class Form1 : Form
@@ -15,7 +17,7 @@ namespace fukuv0608
 
         private void button1_Click(object sender, EventArgs e)
         {
-            vx = -10;
+            vx = -5;
             label1.Text = "¼“ñ“ñ“ñi@OƒÖOj“ñ½ÌÞ°Ý";
             label1.ForeColor = Color.Red;
         }
@@ -23,7 +25,7 @@ namespace fukuv0608
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            vx = 10;
+            vx = 5;
             label1.Text = "ÌÞ°Ý¼“ñ“ñiOƒÖO  j“ñ“ñ“ñ½";
             label1.ForeColor = Color.Green;
         }
@@ -74,8 +76,17 @@ namespace fukuv0608
 
             if (label1.Top > 433)
             {
-                vy = -5;
-                vx = Math.Abs(vx + (vx / 10));
+                if (label1.Left > 309)
+                {
+                    vy = -5;
+                    vx = Math.Abs(vx + (vx / 10));
+                    
+                }
+
+
+                
+                
+
             }
 
             else if (label1.Bottom > ClientSize.Width)
