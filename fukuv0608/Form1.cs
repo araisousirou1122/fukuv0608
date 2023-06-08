@@ -21,13 +21,6 @@ namespace fukuv0608
         }
 
 
-
-
-
-
-
-
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             vx = 10;
@@ -40,12 +33,12 @@ namespace fukuv0608
 
             //vx = Math.Abs(vx + (vx / 10));
             //vx = Math.Abs(vx - (vx / 10));
-            timer1.Interval += -10;
+            timer1.Interval += -5;
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            timer1.Interval += 10;
+            timer1.Interval += 5;
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -66,22 +59,22 @@ namespace fukuv0608
 
             if (label1.Left < 0)
             {
-                vx = 10;
+                vx = 5;
             }
 
             if (label1.Top < 0)
             {
-                vy = 10;
+                vy = 5;
             }
 
             if (label1.Left > 761)
             {
-                vx = -10;
+                vx = -5;
             }
 
             if (label1.Top > 433)
             {
-                vy = -10;
+                vy = -5;
                 vx = Math.Abs(vx + (vx / 10));
             }
 
