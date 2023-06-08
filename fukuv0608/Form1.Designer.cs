@@ -80,16 +80,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(371, 426);
+            label1.Location = new Point(310, 208);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(173, 15);
             label1.TabIndex = 4;
-            label1.Text = "label1";
+            label1.Text = "⊂二二二（　＾ω＾）二⊃ﾌﾞｰﾝ";
             label1.Click += label1_Click_1;
             // 
             // timer1
             // 
             timer1.Enabled = true;
+            timer1.Interval = 50;
             timer1.Tick += timer1_Tick_1;
             // 
             // Form1

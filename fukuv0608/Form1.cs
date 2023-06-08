@@ -2,9 +2,9 @@ namespace fukuv0608
 {
     public partial class Form1 : Form
     {
-        int vx = -10;
-        int vy = -10;
-        string chr = "(>A<)";
+        int vx = -5;
+        int vy = -5;
+        string chr = "¼“ñ“ñ“ñi@OƒÖOj“ñ½ÌÞ°Ý";
 
         public Form1()
         {
@@ -16,11 +16,11 @@ namespace fukuv0608
         private void button1_Click(object sender, EventArgs e)
         {
             vx = -10;
-            label1.Text = "(.Í.)";
+            label1.Text = "¼“ñ“ñ“ñi@OƒÖOj“ñ½ÌÞ°Ý";
             label1.ForeColor = Color.Red;
         }
 
-        
+
 
 
 
@@ -31,7 +31,7 @@ namespace fukuv0608
         private void button2_Click_1(object sender, EventArgs e)
         {
             vx = 10;
-            label1.Text = "(>‚`<)";
+            label1.Text = "ÌÞ°Ý¼“ñ“ñiOƒÖO  j“ñ“ñ“ñ½";
             label1.ForeColor = Color.Green;
         }
 
@@ -56,46 +56,46 @@ namespace fukuv0608
 
 
             timer1.Enabled = false;
-            label1.Text = "‚¨‘O‚Ì•ê‚¿‚á‚ñ‚Å‚×‚»";
+            label1.Text = "araisoushirou";
         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-               label1.Left += vx;
-                label1.Top += vy;
+            label1.Left += vx;
+            label1.Top += vy;
 
-                if (label1.Left < 0)
-                {
-                    vx = 10;
-                }
-
-                if (label1.Top < 0)
-                {
-                    vy = 10;
-                }
-
-                if (label1.Left > 761)
-                {
-                    vx = -10;
-                }
-
-                if (label1.Top > 433)
-                {
-                    vy = -10;
-                    vx = Math.Abs(vx + (vx / 10));
-                }
-
-                else if (label1.Bottom > ClientSize.Width)
-                {
-                    ;
-                }
-
-
-                string t = label1.Text;
-                label1.Text = chr;
-                chr = t;
-
+            if (label1.Left < 0)
+            {
+                vx = 10;
             }
+
+            if (label1.Top < 0)
+            {
+                vy = 10;
+            }
+
+            if (label1.Left > 761)
+            {
+                vx = -10;
+            }
+
+            if (label1.Top > 433)
+            {
+                vy = -10;
+                vx = Math.Abs(vx + (vx / 10));
+            }
+
+            else if (label1.Bottom > ClientSize.Width)
+            {
+                ;
+            }
+
+
+            string t = label1.Text;
+            label1.Text = chr;
+            chr = t;
+
         }
     }
+}
 
